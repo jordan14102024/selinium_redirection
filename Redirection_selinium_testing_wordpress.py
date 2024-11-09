@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import requests
 
+site_type = WORDPRESS
+
 # Initialize options for headless mode
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -10,7 +12,7 @@ chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(options=chrome_options)
 
 # Define the base domain and components
-domain = "piranti.hk"  # Replace with your domain
+domain = "example.com"  # Replace with your domain
 protocols = ["http", "https"]
 subdomains = ["", "www"]
 paths = [
